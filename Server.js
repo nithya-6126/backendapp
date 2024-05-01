@@ -8,7 +8,7 @@ const app = express()
 app.use(express.json())
 app.use(cors())
 
-const dburl = "mongodb://localhost:27017/democrmdb"
+const dburl = "mongodb+srv://admin:admin@cluster0.iu6xd7s.mongodb.net/?retryWrites=true&w=majority"
 mongoose.connect(dburl).then(() =>{
     console.log("Connected to DataBase Successfully")
 }).catch((err) =>{
